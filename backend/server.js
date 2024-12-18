@@ -22,9 +22,9 @@ app.use(
 
 const db = mysql.createConnection({
   host: "localhost",
-  user: "root",
-  password: "",
-  database: "ayune_database",
+  user: "tom",
+  password: "Tom-1234",
+  database: "dcac",
 });
 
 db.connect((err) => {
