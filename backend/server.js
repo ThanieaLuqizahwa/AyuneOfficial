@@ -7,7 +7,7 @@ const { Server } = require("socket.io");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = 5000;
+const PORT = 3011;
 
 // Middleware untuk meningkatkan batas ukuran body request
 app.use(bodyParser.json({ limit: "50mb" }));
