@@ -11,7 +11,7 @@ const ProdukPelembab = () => {
   useEffect(() => {
     // Fetch data dari API
     axios
-      .get("http://localhost:5000/api/produk")
+      .get("http://localhost:3011/api/produk")
       .then((response) => {
         // Filter hanya produk dengan id_jenis = 1
         const filteredProduk = response.data.filter(
