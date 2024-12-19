@@ -24,7 +24,7 @@ const db = mysql.createConnection({
   host: "localhost",
   user: "tom",
   password: "Tom-1234",
-  database: "dcac",
+  database: "ayune_database",
 });
 
 db.connect((err) => {
