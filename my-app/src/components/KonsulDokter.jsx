@@ -58,13 +58,13 @@ const KonsulDokter = () => {
   useEffect(() => {
     // Buat koneksi socket hanya sekali saat komponen dipasang
     if (!socket.current) {
-      socket.current = io('http://localhost:5000');
+      socket.current = io('http://localhost:3011');
     }
 
     // Ambil chat sebelumnya dari backend
     const fetchChats = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/chat', { 
+        const response = await axios.get('http://localhost:3011/chat', { 
           params: { senderId, receiverId }
         });
         setMessages(response.data.chats);
