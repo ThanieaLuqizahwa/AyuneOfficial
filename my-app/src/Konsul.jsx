@@ -5,7 +5,7 @@ import Header from "./components/HeaderAfterLogin";
 import Footer from "./components/Footer";
 import "./file_css/consul.css";
 
-const socket = io("http://localhost:5000"); // Hubungkan ke backend di port 5000
+const socket = io("http://localhost:3011"); // Hubungkan ke backend di port 5000
 
 const Konsul = () => {
   const [messages, setMessages] = useState([]);
