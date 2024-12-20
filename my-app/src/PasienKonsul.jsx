@@ -4,7 +4,7 @@ import "./file_css/ChatPage.css";
 import Header from "./components/HeaderDokter";
 import FooterDokter from "./components/FooterDokter";
 
-const socket = io("http://localhost:5000"); // Hubungkan ke backend di port 5000
+const socket = io("http://localhost:3011"); // Hubungkan ke backend di port 5000
 
 const PasienKonsul = () => {
   const [messages, setMessages] = useState([]);
